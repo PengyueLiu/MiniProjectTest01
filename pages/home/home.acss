@@ -1,0 +1,8 @@
+.title{
+  color: red;
+  font-size: 30px; 
+}
+.hoverBtn{
+  background: red;
+  color: blue;
+}

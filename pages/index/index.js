@@ -1,3 +1,6 @@
+//替换成开发者后台设置的安全域名
+//let url = "http://lpyding.vaiwan.com:8081";
+
 Page({
   onLoad(query) {
     // 页面加载
@@ -31,5 +34,5 @@ Page({
       desc: 'My App description',
       path: 'pages/index/index',
     };
-  },
+  }
 });

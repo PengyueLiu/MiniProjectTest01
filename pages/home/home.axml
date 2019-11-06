@@ -1,4 +1,35 @@
-<view>
-  New Page
+
+<!-- 1.数据绑定 -->
+<view>Hello {{name}}</view>
+
+<!-- 2.列表展示 -->
+<view a:for="{{students}}">{{item.id}} {{item.name}}</view>
+
+<!-- 3.事件监听 -->
+<view>当前计数：{{counter}} </view>
+<button size="mini" type="primary" onTap="handleAdd">+</button>
+<button size="mini" type="default" plain hover-stay-time="1000" onTap="handleSub">-</button>
+<button size="mini" type="default" hover-class="hoverBtn">hover-red</button>
+
+<view a:if="{{view == 'WEBVIEW'}}"> WEBVIEW </view>
+<view a:elif="{{view == 'APP'}}"> APP </view>
+<view a:else="{{view == 'dingtalk'}}"> dingtalk </view>
+
+<!-- 模板 -->
+<template name="staffName">
+  <view>
+    FirstName: {{firstName}}, LastName: {{lastName}}
+  </view>
+</template>
+<template is="staffName" data="{{...staffA}}"></template>
+<template is="staffName" data="{{...staffB}}"></template>
+<template is="staffName" data="{{...staffC}}"></template>
+
+<view a:for="{{list}}" a:key="*this">
+  <view onTap="bringToFront" data-value="{{item}}">
+    {{item}}: click to bring to front
+  </view>
 </view>
 
+<input key="name" a:if="{{username}}" placeholder="Enter your username"/>
+<input key="email" a:else placeholder="Enter your email address"/>

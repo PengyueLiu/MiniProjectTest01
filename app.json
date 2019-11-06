@@ -4,7 +4,28 @@
     "pages/home/home"
   ],
   "window": {
-    "defaultTitle": "惜月 App",
-    "titleBarColor": "#5555ff"
+    "defaultTitle": "惜月APP",
+    "titleBarColor": "#5555ff",
+    "pullRefresh": true, 
+    "allowsBounceVertical": "YES"
+  },
+  "tabBar": {
+    "textColor": "#000000",
+    "selectedColor": "#5555ff",
+    "backgroundColor": "#ffffff",
+    "items": [
+      {
+        "pagePath": "pages/index/index",
+        "name": "首页",
+        "icon": "image/home.png",
+        "activeIcon": "image/home_active.png"
+      },
+      {
+        "pagePath": "pages/home/home",
+        "name": "测试",
+        "icon": "image/component.png",
+        "activeIcon": "image/component_active.png"
+      }
+    ]
   }
 }
