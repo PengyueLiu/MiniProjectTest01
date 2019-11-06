@@ -1,0 +1,10 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/home/home"
+  ],
+  "window": {
+    "defaultTitle": "惜月 App",
+    "titleBarColor": "#5555ff"
+  }
+}
